@@ -7,10 +7,11 @@ button.addEventListener("click", function () {
     // 2. Waiting on prompt is to be triggered by the click of the button
     // 3. When promt is triggered, name asked
   const name = prompt("What is your name?");
+  const mood = prompt("How are you feeling?")
   // 4. When name is entered, heading text content (changes what user sees) changes to "Hi, name"
   heading.textContent = `Hi, ${name}`;
   button.textContent = "Clicked!";
-  para.textContent = "Today's mood is HAPPY!";
+  para.textContent = `${mood}!`;
   // console.log is used to see output in console via inspect
   console.log("The button has been clicked");
   console.log(`The user's name is ${name}`);
